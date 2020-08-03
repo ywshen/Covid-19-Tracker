@@ -5,6 +5,7 @@ import {
     Select,
 } from '@material-ui/core'
 import InfoBox from './InfoBox'
+import Map from './Map'
 import './App.css';
 
 function App() {
@@ -36,8 +37,9 @@ function App() {
 
   return (
       <div className="app">
+          <div className="app_left">
           <div className="app_header">
-              <h1>COVID-19- TRACKER</h1>
+              <h1>COVID-19-TRACKER</h1>
               <FormControl classname="app_dropdown">
                   <Select variant="outlined" onChange={onCountryChange} value={country}>
                       <MenuItem value="worldwide">Worldwide</MenuItem>
@@ -58,6 +60,12 @@ function App() {
 
           </div>
 
+          <Map />
+
+          </div>
+          <Card className="app_right">
+              -
+          </Card>
         </div>
   );
 }
