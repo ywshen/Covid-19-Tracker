@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {MenuItem, FormControl, Select, Card, } from '@material-ui/core'
+import {MenuItem, FormControl, Select, Card, CardContent, } from '@material-ui/core'
 import InfoBox from './InfoBox'
 import Map from './Map'
 import './App.css';
@@ -60,7 +60,10 @@ function App() {
 
           </div>
           <Card className="app_right">
-              -
+              <CardContent>
+                  <h3>Live Cases by Country</h3>
+                  <h3>Worldwide New Cases</h3>
+              </CardContent>
           </Card>
         </div>
   );
