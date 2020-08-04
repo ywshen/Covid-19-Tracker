@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {MenuItem, FormControl, Select, Card, CardContent, } from '@material-ui/core'
 import InfoBox from './InfoBox'
+import LineGraph from "./LineGraph";
 import Map from './Map'
 import './App.css';
 import Table from './Table';
@@ -91,9 +92,10 @@ function App() {
           </div>
           <Card className="app_right">
               <CardContent>
-                  <h3>Live Cases by Country</h3>
-                  <Table countries={tableData} />
-                  <h3>Worldwide New Cases</h3>
+                <h3>Live Cases by Country</h3>
+                <Table countries={tableData} />
+                <h3>Worldwide new cases</h3>
+                <LineGraph casesType="cases" />
               </CardContent>
           </Card>
         </div>
